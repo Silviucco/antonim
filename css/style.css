@@ -101,10 +101,13 @@ button:focus {
     border: none;
     outline: none;
 }
+.caca {
+    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0%;
+}
 #scrollUp {
     display: none;
     border-radius: 8px;
-    background: transparent linear-gradient(90deg, #ffb703 0%, #fb8500 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
     -webkit-box-shadow: 8.135px 18.271px 51px 0px rgba(31, 61, 157, 0.4);
     box-shadow: 8.135px 18.271px 51px 0px rgba(31, 61, 157, 0.4);
     position: fixed;
@@ -183,7 +186,7 @@ section {
 /* Button Effects */
 .btn {
     -moz-user-select: none;
-    background: transparent linear-gradient(90deg, #ffb703 0%, #fb8500 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
     border: none;
     border-radius: 8px;
     color: #fff;
@@ -201,7 +204,7 @@ section {
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-    box-shadow: 3px 4px 15px #eb3449a6;
+    box-shadow: 2px 3px 5px #eb3449a6;
     z-index: 999;
 }
 .btn:hover {
@@ -218,14 +221,14 @@ section {
     height: 45px;
     border: 1px solid #707070;
     border-radius: 8px;
-    margin-top: -28px;
-    margin-left: 15px;
+    margin-top: -36px;
+    margin-left: 9px;
     position: absolute;
     transition: all 0.3s ease 0s;
 }
 .btn.ss-btn {
-    background: transparent linear-gradient(90deg, #ffb703 0%, #fb8500 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 3px 4px 15px #eb3449a6;
+    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 2px 3px 5px #eb3449a6;
     color: #fff;
 }
 /*
@@ -248,8 +251,8 @@ section {
 .top-bar {
     display: inline-flex;
     width: 100%;
-    background: transparent linear-gradient(90deg, #ffb703 0%, #fb8500 100%) 0% 0% no-repeat padding-box;
-    padding: 10px 0;
+    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
+    padding: 6px 0;
 }
 .top-bar p {
     color: #ffffff;
@@ -257,7 +260,7 @@ section {
     margin: 6px 0;
     font-size: 15px;
 }
-.top-bar .top-right-nav.text-right {
+.top-bar .top-right-nav {
     float: right;
 }
 .top-bar .top-right-nav ul {
@@ -306,8 +309,6 @@ header {
     -moz-transition: all ease 0.4s;
     -ms-transition: all ease 0.4s;
     -o-transition: all ease 0.4s;
-    /* background-image: url("../images/about-shape1.jpg"); */
-    /* background-size: contain; */
 }
 header.sticky {
     position: -webkit-sticky;
@@ -342,20 +343,20 @@ header.v2:before {
     display: none;
 }
 .header-logo {
-    padding: 12px 0;
+    padding: 8px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header-logo img {
-    max-width: 90px;
+    max-width: 84px;
 }
 header.v2 .header-logo {
     padding: 50px 0;
     padding-top: 50px;
 }
 header nav.main-menu-area {
-    padding: 15px 0;
+    padding: 8px 0;
 }
 ul.main-menu li a {
     font-size: 16px;
@@ -537,12 +538,12 @@ ul.main-menu li:hover ul.sub-menu {
     top: 0;
     height: 100%;
     width: 100%;
-    background: #219ebc;
+    background: #064b83;
     opacity: 0.9;
 }
 .slider-area {
     position: relative;
-    margin-top: -120px;
+    margin-top: -105px;
     padding: 0;
 }
 .slider-bg2 {
@@ -792,7 +793,7 @@ ul.main-menu li:hover ul.sub-menu {
 .features-sec .single-feature-sec .service-icon {
     width: 60px;
     height: 60px;
-    background: transparent linear-gradient(90deg, #f26b31 0%, #fb8500 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
     color: #fff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -922,7 +923,7 @@ ul.main-menu li:hover ul.sub-menu {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #003561;
+    background: #064b83;
     opacity: 0.95;
     z-index: -1;
 }
@@ -1374,7 +1375,7 @@ ul.main-menu li:hover ul.sub-menu {
     line-height: 100%;
     font-weight: 700;
     text-transform: capitalize;
-    color: #003561;
+    color: #064b83;
     padding-top: 14px;
     padding-bottom: 35px;
     margin-bottom: 0;
@@ -1530,7 +1531,7 @@ ul.main-menu li:hover ul.sub-menu {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #003561;
+    background: #064b83;
     opacity: 0.95;
     z-index: -1;
 }
@@ -2348,7 +2349,7 @@ ul.main-menu li:hover ul.sub-menu {
     top: 0;
     height: 100%;
     width: 100%;
-    background: #219ebc;
+    background: #064b83;
     opacity: 0.9;
 }
 .breadcrumb-area {
@@ -2620,7 +2621,7 @@ ul.main-menu li:hover ul.sub-menu {
     padding: 90px 0 50px;
 }
 .footer-sec:before {
-    background: #003561;
+    background: #064b83;
     opacity: 0.95;
     bottom: 0;
     content: "";
@@ -2911,6 +2912,15 @@ ul.main-menu li:hover ul.sub-menu {
 
 @media (max-width: 992px) {
     /** Menu CSS **/
+    .top-bar ul.left-bar {
+        display: none;
+    }
+    .top-bar ul.right-bar,
+    .top-bar .top-right-nav.text-right,
+    .top-bar ul li {
+        float: none;
+        text-align: center;
+    }
     .mean-container .mean-bar {
         top: 28px;
     }
