@@ -102,12 +102,12 @@ button:focus {
     outline: none;
 }
 .caca {
-    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0%;
+    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0%;
 }
 #scrollUp {
     display: none;
     border-radius: 8px;
-    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
     -webkit-box-shadow: 8.135px 18.271px 51px 0px rgba(31, 61, 157, 0.4);
     box-shadow: 8.135px 18.271px 51px 0px rgba(31, 61, 157, 0.4);
     position: fixed;
@@ -186,7 +186,7 @@ section {
 /* Button Effects */
 .btn {
     -moz-user-select: none;
-    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
     border: none;
     border-radius: 8px;
     color: #fff;
@@ -227,7 +227,7 @@ section {
     transition: all 0.3s ease 0s;
 }
 .btn.ss-btn {
-    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
     box-shadow: 2px 3px 5px #eb3449a6;
     color: #fff;
 }
@@ -251,7 +251,7 @@ section {
 .top-bar {
     display: inline-flex;
     width: 100%;
-    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
     padding: 6px 0;
 }
 .top-bar p {
@@ -538,7 +538,7 @@ ul.main-menu li:hover ul.sub-menu {
     top: 0;
     height: 100%;
     width: 100%;
-    background: #064b83;
+    background: #3aaff8;
     opacity: 0.9;
 }
 .slider-area {
@@ -793,7 +793,7 @@ ul.main-menu li:hover ul.sub-menu {
 .features-sec .single-feature-sec .service-icon {
     width: 60px;
     height: 60px;
-    background: transparent linear-gradient(90deg, #fb8500 0%, #ffb011 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
     color: #fff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
