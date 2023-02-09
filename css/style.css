@@ -98,16 +98,16 @@ ul {
 }
 button:hover,
 button:focus {
-    border: none;
+    /* border: none; */
     outline: none;
 }
 .caca {
-    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0%;
+    background: transparent linear-gradient(2700deg, #91ec30 0%, #78d712 100%) 0% 0%;
 }
 #scrollUp {
     display: none;
     border-radius: 8px;
-    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(2700deg, #91ec30 0%, #78d712 100%) 0% 0% no-repeat padding-box;
     -webkit-box-shadow: 8.135px 18.271px 51px 0px rgba(31, 61, 157, 0.4);
     box-shadow: 8.135px 18.271px 51px 0px rgba(31, 61, 157, 0.4);
     position: fixed;
@@ -125,7 +125,8 @@ button:focus {
     line-height: 50px;
     font-size: 25px;
 }
-section {
+
+@media section {
     padding: 90px 0;
 }
 /** Section Title **/
@@ -186,7 +187,7 @@ section {
 /* Button Effects */
 .btn {
     -moz-user-select: none;
-    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(2700deg, #91ec30 0%, #78d712 100%) 0% 0% no-repeat padding-box;
     border: none;
     border-radius: 8px;
     color: #fff;
@@ -219,17 +220,22 @@ section {
 .btn-after {
     width: 100%;
     height: 45px;
-    border: 1px solid #707070;
+    border: 1px solid #91ec302d;
     border-radius: 8px;
     margin-top: -36px;
-    margin-left: 9px;
+    margin-left: 6px;
     position: absolute;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 .btn.ss-btn {
-    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 2px 3px 5px #eb3449a6;
+    background: transparent linear-gradient(2700deg, #91ec30 0%, #78d712 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 4px 6px 5px #91ec3073;
     color: #fff;
+}
+
+.btn.ss-btn:hover {
+    background-image: linear-gradient(34deg, #ffa413, #ffcf81);
+    transition: all 0.5s ease 0s;
 }
 /*
 ================================================
@@ -251,7 +257,7 @@ section {
 .top-bar {
     display: inline-flex;
     width: 100%;
-    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(2700deg, #91ec30 0%, #78d712 100%) 0% 0% no-repeat padding-box;
     padding: 6px 0;
 }
 .top-bar p {
@@ -339,45 +345,63 @@ header::before {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
-header.v2:before {
-    display: none;
-}
-.header-logo {
+header .header-logo {
     padding: 8px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header-logo img {
+header .header-logo img {
     max-width: 84px;
 }
-header.v2 .header-logo {
-    padding: 50px 0;
-    padding-top: 50px;
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
 }
-header nav.main-menu-area {
-    padding: 8px 0;
+
+header .row .pull-left {
+    position: relative;
+    padding-left: 15px;
 }
+
+header nav ul li.nav-item a.nav-link {
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 ul.main-menu li a {
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 22px;
     display: block;
     position: relative;
-    padding: 32.7px 0;
+    padding: 0 15px;
 }
+
 ul.main-menu > li {
-    display: inline-block;
-    margin: 0 15px;
+    display: block;
     position: relative;
+    padding: 12px 0;
+    border-bottom: 1px solid #00000028;
 }
-ul.main-menu > li:last-child {
-    margin-right: 0;
+
+.dropdown-menu {
+    min-width: 240px;
+    padding: 0;
+    border: none;
+    top: 90%;
 }
 ul.main-menu > li:first-child {
-    margin-left: 0;
+    border-top: 2px solid #91ec30;
+}
+ul.main-menu > li:last-child {
+    border: none;
 }
 ul.main-menu li a:hover {
     color: #0c718a;
@@ -426,29 +450,54 @@ ul.main-menu li a.property-btn {
     border: 2px dotted #ffb703;
     font-size: 16px;
 }
+nav.navbar li a.call-btn {
+    color: #fff;
+    background-color: #78d712;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 12px 28px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    z-index: 999;
+    margin-left: 24px;
+}
+
+nav.navbar li a.call-btn:hover {
+    background-image: linear-gradient(34deg, #ffa413, #ffbb4d);
+    box-shadow: 2px 3px 5px #f9b20056;
+}
+
+nav.navbar li a.call-btn i {
+    margin-right: 8px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../images/hamb.svg");
+}
+.navbar-light .navbar-toggler {
+    padding: 4px 8px;
+    border-color: #256fd3;
+}
+
+.navbar-light .navbar-toggler:hover {
+    border-color: #2570d362;
+}
+
 ul.main-menu li a.property-btn i {
     font-size: 20px;
     line-height: 20px;
     margin-right: 5px;
     margin-top: 1px;
 }
-ul.main-menu.v2 li a.property-btn {
-    background-color: #219ebc;
-}
 ul.main-menu li a.property-btn:hover {
     color: #219ebc;
     border-color: #219ebc;
     background-color: #fff;
-}
-ul.main-menu.v2 li.sub-menu-wrap a {
-    padding-right: 0 !important;
-}
-ul.main-menu.v2 li.sub-menu-wrap a::before {
-    display: none;
-}
-ul.main-menu.v2 > li > a:not(.property-btn) {
-    padding: 55px 0;
-    padding-bottom: 20px;
 }
 /* Sub Menu Style */
 ul.main-menu li ul.sub-menu {
@@ -473,28 +522,6 @@ ul.main-menu li ul.sub-menu {
     -moz-transform: rotateX(90deg);
     -ms-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
-}
-ul.main-menu.v2 li ul.sub-menu {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    border-top: none;
-    left: -20px;
-    min-width: 220px;
-}
-ul.main-menu.v2 li ul.sub-menu::before {
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    background-color: #fff;
-    top: -7px;
-    left: 30px;
-    border-top: 1px solid #eee;
-    border-left: 1px solid #eee;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
 }
 ul.main-menu li ul.sub-menu li {
     margin: 0;
@@ -524,35 +551,20 @@ ul.main-menu li:hover ul.sub-menu {
 6. Main Slider
 ================================================
 */
-.slider-bg {
-    /* min-height: 810px; */
-    background-position: center;
+
+section#home {
+    margin-top: -195px;
+}
+
+section#home .slider-active .slid {
     background-size: cover;
-    position: relative;
-    z-index: 1;
+    background-position: bottom;
 }
-.slider-bg::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: #3aaff8;
-    opacity: 0.9;
+section#home .slider-active .slider-1 {
+    background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/slide1.png");
 }
-.slider-area {
-    position: relative;
-    margin-top: -105px;
-    padding: 0;
-}
-.slider-bg2 {
-    min-height: 900px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    margin-top: -118px;
-    z-index: 1;
+section#home .slider-active .slider-2 {
+    background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/slide2.png");
 }
 
 .slider-content > span::before {
@@ -767,6 +779,28 @@ ul.main-menu li:hover ul.sub-menu {
     margin-top: -50px;
     margin-left: 0px;
 }
+
+.whatsapp {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    width: 50px;
+    height: 52px;
+    z-index: 20;
+    color: #ffffff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    background-image: url("../images/wa.png");
+    background-size: cover;
+}
+
+.whatsapp img {
+    width: 50px;
+    height: 50px;
+}
 /*
 ================================================
 7. Our Features
@@ -793,7 +827,7 @@ ul.main-menu li:hover ul.sub-menu {
 .features-sec .single-feature-sec .service-icon {
     width: 60px;
     height: 60px;
-    background: transparent linear-gradient(90deg, #36c706 0%, #83fa2f 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(2700deg, #91ec30 0%, #78d712 100%) 0% 0% no-repeat padding-box;
     color: #fff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -2913,7 +2947,7 @@ ul.main-menu li:hover ul.sub-menu {
 @media (max-width: 992px) {
     /** Menu CSS **/
     .top-bar ul.left-bar {
-        display: none;
+        /* display: none; */
     }
     .top-bar ul.right-bar,
     .top-bar .top-right-nav.text-right,
@@ -2927,6 +2961,9 @@ ul.main-menu li:hover ul.sub-menu {
     .mean-container a.meanmenu-reveal {
         top: 1px;
         right: 5px !important;
+    }
+    .mobile-menu-container {
+        display: block;
     }
     ul.main-menu li.sub-menu-wrap a {
         padding-right: 0 !important;
