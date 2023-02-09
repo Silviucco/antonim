@@ -126,7 +126,7 @@ button:focus {
     font-size: 25px;
 }
 
-@media section {
+section {
     padding: 90px 0;
 }
 /** Section Title **/
@@ -782,7 +782,7 @@ section#home .slider-active .slider-2 {
 
 .whatsapp {
     position: fixed;
-    right: 0;
+    right: 15px;
     bottom: 50px;
     width: 50px;
     height: 52px;
@@ -795,11 +795,7 @@ section#home .slider-active .slider-2 {
     border-radius: 8px;
     background-image: url("../images/wa.png");
     background-size: cover;
-}
-
-.whatsapp img {
-    width: 50px;
-    height: 50px;
+    display: none;
 }
 /*
 ================================================
@@ -2945,6 +2941,12 @@ section#home .slider-active .slider-2 {
 }
 
 @media (max-width: 992px) {
+    #scrollUp {
+        display: none !important;
+    }
+    .whatsapp {
+        display: block;
+    }
     /** Menu CSS **/
     .top-bar ul.left-bar {
         /* display: none; */
