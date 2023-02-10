@@ -93,8 +93,11 @@ $(function () {
             0: {
                 items: 1
             },
+            480: {
+                items: 2
+            },
             600: {
-                items: 1
+                items: 2
             },
             700: {
                 items: 3
@@ -208,6 +211,12 @@ $(function () {
     $(function () {
         var theYear = new Date().getFullYear();
         $('#year').html(theYear);
+    });
+
+    $(function () {
+        $(".dropdown").hover(function () {
+            $(".dropdown-toggle", this).trigger("click");
+        });
     });
 
 });
