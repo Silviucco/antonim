@@ -352,7 +352,7 @@ header .header-logo {
     justify-content: center;
 }
 header .header-logo img {
-    max-width: 84px;
+    width: 84px;
 }
 
 header .row {
@@ -465,6 +465,7 @@ nav.navbar li a.call-btn {
     transition: all 0.3s ease 0s;
     z-index: 999;
     margin-left: 24px;
+    margin-right: 15px;
 }
 
 nav.navbar li a.call-btn:hover {
@@ -474,6 +475,12 @@ nav.navbar li a.call-btn:hover {
 
 nav.navbar li a.call-btn i {
     margin-right: 8px;
+}
+
+.navbar-collapse.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -793,9 +800,13 @@ section#home .slider-active .slider-2 {
     overflow: hidden;
     cursor: pointer;
     border-radius: 8px;
-    background-image: url("../images/wa.png");
-    background-size: cover;
     display: none;
+}
+
+.whatsapp img {
+    display: block;
+    width: 51px;
+    height: 51px;
 }
 /*
 ================================================
@@ -2940,13 +2951,39 @@ section#home .slider-active .slider-2 {
     }
 }
 
+.navbar {
+    padding: 0;
+}
+
 @media (max-width: 992px) {
+    header .header-logo img {
+        width: 60px;
+    }
+    section#home {
+        margin-top: -165px;
+    }
     #scrollUp {
         display: none !important;
     }
     .whatsapp {
         display: block;
     }
+    .navbar {
+        justify-content: end;
+    }
+    nav.navbar {
+        position: relative;
+        margin-right: 15px;
+    }
+    nav .navbar-collapse.collapse.show {
+        background-color: red;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        min-width: 320px;
+        max-width: 100%;
+    }
+
     /** Menu CSS **/
     .top-bar ul.left-bar {
         /* display: none; */
