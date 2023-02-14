@@ -64,7 +64,7 @@ h6 {
 }
 a {
     color: #2d2e2e;
-    transition: all 0.3s ease 0s;
+    /* transition: all 0.3s ease 0s; */
 }
 a:hover {
     color: #242c42;
@@ -2942,12 +2942,22 @@ section#home .slider-active .slider-2 {
     padding: 0;
 }
 
+.main-content {
+    display: none;
+}
+
 @media (max-width: 992px) {
+    header.main {
+        display: none;
+    }
+    .main-content {
+        display: block;
+    }
     header .header-logo img {
         width: 56px;
     }
     section#home {
-        margin-top: -158px;
+        margin-top: -156px;
     }
     #scrollUp {
         display: none !important;
@@ -2985,6 +2995,29 @@ section#home .slider-active .slider-2 {
 
     ul.main-menu > li:last-child {
         border-bottom: none;
+    }
+
+    ul.main-menu li a {
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 40px;
+    }
+
+    ul.main-menu > li {
+        border: 1px solid #fff;
+    }
+
+    ul.main-menu > li:hover {
+        background-color: #f89b08;
+        border-top: 1px solid #f89b08;
+        border-bottom: 1px solid #f89b08;
+    }
+    ul.main-menu > li:hover a {
+        color: #fff;
+    }
+
+    ul.main-menu > li:last-child:hover {
+        /* border: 5px solid red; */
     }
 
     /** Menu CSS **/
@@ -3034,7 +3067,6 @@ section#home .slider-active .slider-2 {
     }
     ul.sub-menu li {
         border-bottom: none !important;
-        background-color: #e5edff !important;
         padding-left: 10px !important;
         width: auto !important;
         float: none !important;
@@ -3083,7 +3115,7 @@ section#home .slider-active .slider-2 {
 @media (max-width: 767.98px) {
     /** Header CSS **/
     header .container {
-        max-width: 100%;
+        width: 100%;
     }
     header::before {
         left: 0;

@@ -8,9 +8,11 @@
         <link href="css/plugins.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/owl.css" rel="stylesheet" />
+        <link href="css/rsmenu-main.css" rel="stylesheet" />
         <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
     </head>
-    <body>
+    <body class="default-home">
+        <div class="offwrap"></div>
         <div id="dvLoading" style="display: block"></div>
         <div class="top-bar">
             <div class="container">
@@ -31,7 +33,7 @@
                 </div> -->
             </div>
         </div>
-        <header>
+        <header class="main">
             <div class="container">
                 <div class="row">
                     <div class="pull-left">
@@ -40,9 +42,25 @@
                         </div>
                     </div>
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <div class="expand-btn-inner">
+                            <ul>
+                                <li class="humburger">
+                                    <a id="nav-expander" class="nav-expander bar" href="#">
+                                        <div class="bar">
+                                            <span class="dot1"></span>
+                                            <span class="dot2"></span>
+                                            <span class="dot3"></span>
+                                            <span class="dot4"></span>
+                                            <span class="dot5"></span>
+                                            <span class="dot6"></span>
+                                            <span class="dot7"></span>
+                                            <span class="dot8"></span>
+                                            <span class="dot9"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
@@ -85,6 +103,106 @@
                 </div>
             </div>
         </header>
+        <div class="main-content">
+            <div class="full-width-header">
+                <header id="rs-header" class="rs-header header-style1">
+                    <div class="middle-header hidden-md">
+                        <div class="container">
+                            <div class="row-table"></div>
+                        </div>
+                    </div>
+                    <div class="menu-area menu-sticky">
+                        <div class="container">
+                            <div class="row-table">
+                                <div class="col-cell header-logo">
+                                    <a href="index.html">
+                                        <img class="normal-logo" src="images/logo.png" alt="logo" />
+                                    </a>
+                                </div>
+
+                                <div class="col-cell">
+                                    <div class="expand-btn-inner">
+                                        <ul>
+                                            <li class="humburger">
+                                                <a id="nav-expander" class="nav-expander bar" href="#">
+                                                    <div class="bar">
+                                                        <span class="dot1"></span>
+                                                        <span class="dot2"></span>
+                                                        <span class="dot3"></span>
+                                                        <span class="dot4"></span>
+                                                        <span class="dot5"></span>
+                                                        <span class="dot6"></span>
+                                                        <span class="dot7"></span>
+                                                        <span class="dot8"></span>
+                                                        <span class="dot9"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                        <div class="close-btn">
+                            <a id="nav-close2" class="nav-close">
+                                <div class="line">
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <ul class="nav-menu">
+                            <li>
+                                <a href="about.html">Acasă</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="services.html">Smart Home</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Smart Home</a></li>
+                                    <li><a href="#">Măsurători PRAM și PAT</a></li>
+                                    <li><a href="#">Video - Interfoane - Cablaje</a></li>
+                                    <li><a href="#">Stații electrice de încărcare auto</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="services.html">Instalații electrice</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Smart Home</a></li>
+                                    <li><a href="#">Măsurători PRAM și PAT</a></li>
+                                    <li><a href="#">Video - Interfoane - Cablaje</a></li>
+                                    <li><a href="#">Stații electrice de încărcare auto</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="canvas-contact">
+                            <div class="address-area">
+                                <div class="address-list">
+                                    <div class="info-icon">
+                                        <i class="fi fi-rr-map-marker-home"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4 class="title">Contact</h4>
+                                        <em>31 New Street, NY, USA</em>
+                                    </div>
+                                </div>
+                                <div class="address-list">
+                                    <div class="info-icon">
+                                        <i class="fi fi-rr-envelope-plus"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4 class="title">Email</h4>
+                                        <em><a href="mailto:info@konstruk.com">contact@aelectric.ro</a></em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
         <section id="home" class="slider-area fix">
             <div class="slider-active">
                 <div class="slid slider-1">
@@ -392,6 +510,7 @@
                                     <div class="col-4"><img src="images/sigle/guvernul-romaniei.png" class="img-fluid" alt="" /></div>
                                     <div class="col-4"><img src="images/sigle/UE.png" class="img-fluid" alt="" /></div>
                                     <div class="col-4"><img src="images/sigle/Instrumente-structurale.png" class="img-fluid" alt="" /></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -405,9 +524,7 @@
                         <p>
                             © Copyright
                             <span id="year"></span>
-                            Fusestar Bootstrap Template by
-                            <span class="color">SBTechnosoft</span>
-                            .
+                            A Electric .
                         </p>
                     </div>
                 </div>
@@ -424,6 +541,6 @@
         <script src="js/jquery.appear.min.js"></script>
         <script src="js/odometer.min.js"></script>
         <script src="js/custom.js"></script>
-        <script></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
