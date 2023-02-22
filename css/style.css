@@ -582,6 +582,10 @@ section#home .slider-active .slider-2 {
     background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/slide2.png");
 }
 
+section#home .bg-fixed._smart {
+    background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/slide1.png");
+}
+
 .slider-content > span::before {
     content: "";
     background: #fff;
@@ -2952,6 +2956,9 @@ section#home .slider-active .slider-2 {
     }
     .main-content {
         display: block;
+        position: sticky;
+        top: 0;
+        z-index: 999999999;
     }
     header .header-logo img {
         width: 56px;

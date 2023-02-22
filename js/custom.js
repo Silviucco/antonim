@@ -92,32 +92,6 @@ $(function () {
         }
     });
 
-    /*------------------------------------------------------------------
-        Testimonials Sec
-    ------------------------------------------------------------------*/
-    $('.test-active').owlCarousel({
-        loop: true,
-        margin: 30,
-        items: 1,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        nav: false,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1,
-                margin: 0
-            },
-            767: {
-                items: 2
-            },
-            992: {
-                items: 2
-            },
-            1200: {
-                items: 3
-            }
-        }
-    });
 
     /*--------------------------
         Sticky
@@ -191,11 +165,11 @@ $(function () {
         $('#year').html(theYear);
     });
 
-    $(function () {
-        $(".dropdown").hover(function () {
-            $(".dropdown-toggle", this).trigger("click");
-        });
-    });
+    // $(function () {
+    //     $(".dropdown").hover(function () {
+    //         $(".dropdown-toggle", this).trigger("click");
+    //     });
+    // });
 
 });
 
