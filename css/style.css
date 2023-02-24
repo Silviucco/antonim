@@ -87,6 +87,11 @@ i {
 .transition3s {
     transition: all 0.3s ease-in-out 0s;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #256fd3;
+}
+
 ul,
 li {
     list-style: outside none none;
@@ -316,7 +321,7 @@ header {
     -moz-transition: all ease 0.4s;
     -ms-transition: all ease 0.4s;
     -o-transition: all ease 0.4s;
-    padding: 4px 0;
+    padding: 8px 0;
 }
 header.sticky {
     position: -webkit-sticky;
@@ -353,7 +358,7 @@ header .header-logo {
     justify-content: center;
 }
 header .header-logo img {
-    width: 80px;
+    width: 76px;
 }
 
 header .row {
@@ -408,7 +413,7 @@ ul.main-menu > li:last-child {
     border: none;
 }
 ul.main-menu li a:hover {
-    color: #256fd3;
+    color: #91ec30;
 }
 ul.main-menu li.sub-menu-wrap a {
     padding-right: 15px !important;
@@ -458,13 +463,13 @@ nav.navbar li a.call-btn {
     color: #fff;
     background-color: #78d712;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     color: #fff;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 0;
-    padding: 12px 28px;
+    padding: 14px 28px;
     text-align: center;
     transition: all 0.3s ease 0s;
     z-index: 999;
@@ -568,22 +573,22 @@ ul.main-menu li:hover ul.sub-menu {
 */
 
 section#home {
-    margin-top: -185px;
+    margin-top: -184px;
 }
 
 section#home .slider-active .slid {
-    background-size: cover;
+    /* background-size: cover; */
     background-position: bottom;
 }
 section#home .slider-active .slider-1 {
-    background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/slide1.png");
+    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url("../images/slider2-smart-home.png");
 }
 section#home .slider-active .slider-2 {
-    background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/slide2.png");
+    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url("../images/slider-smart-home.png");
 }
 
 section#home .bg-fixed._smart {
-    background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/slide1.png");
+    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url("../images/slide1.png");
 }
 
 .slider-content > span::before {
@@ -964,7 +969,7 @@ section#home .bg-fixed._smart {
 ================================================
 */
 .home-service {
-    background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/slide1.png");
+    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url("../images/slide1.png");
     background-size: cover;
     position: relative;
     z-index: 2;
@@ -2658,7 +2663,7 @@ section#home .bg-fixed._smart {
 */
 .footer-sec {
     background-color: transparent;
-    background-image: linear-gradient(34deg, #2570d3c0, #3189e8), url("../images/cta-bg.jpg");
+    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url("../images/cta-bg.jpg");
     background-image: ;
     background-position: center top;
     background-size: cover;
@@ -2897,7 +2902,7 @@ section#home .bg-fixed._smart {
     /** Header CSS **/
     header::before {
         left: 0;
-        top: -2px;
+        top: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         width: 100%;

@@ -194,24 +194,11 @@
             ]
         });
     }
-    // Rs Pic
-    var rs_pie = $('.rs-pie-content');
-    if (rs_pie.length) {
-        $('.rs-pie').easyPieChart({
-            size: 170,
-            barColor: "#FF6D00",
-            scaleLength: 0,
-            lineWidth: 8,
-            trackColor: "#0a2fa5",
-            lineCap: "circle",
-            animate: 2000,
-        });
-    }
 
     //canvas menu
     var navexpander = $('#nav-expander');
     if (navexpander.length) {
-        $('#nav-expander, #nav-close, #nav-close2, .offwrap').on('click', function (e) {
+        $('#nav-expander, #nav-close, .offwrap').on('click', function (e) {
             e.preventDefault();
             $('body').toggleClass('nav-expanded');
         });
@@ -257,6 +244,7 @@
                         $(this).toggleClass('submenu-opened');
                     }
                     else {
+                        // open submenu
                         $(this).siblings('ul').addClass('open-sub').hide('fadeIn');
                         $(this).siblings('ul').slideToggle().show('fadeIn');
                     }
