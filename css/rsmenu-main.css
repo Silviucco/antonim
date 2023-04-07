@@ -38,7 +38,7 @@ ul {
     top: 0;
     bottom: 0;
     opacity: 0.8;
-    z-index: 2;
+    z-index: 20;
 }
 body.nav-expanded .offwrap {
     left: 0%;
@@ -3030,4 +3030,8 @@ body .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li
 }
 .rs-project.project-style2.project-modify1.project-onepage1 .project-item:before {
     background-image: linear-gradient(180deg, #ffffff00 0%, #000000 100%);
+}
+
+.offwrap {
+    z-index: 8;
 }
