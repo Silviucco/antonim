@@ -337,7 +337,7 @@ header::before {
     position: absolute;
     height: 100%;
     left: 50%;
-    top: -2px;
+    top: 0;
     background-color: #fff;
     border-bottom-left-radius: 110px;
     border-bottom-right-radius: 110px;
@@ -545,7 +545,7 @@ section#home .slider-active .slid {
     background-position: center;
 }
 section#home .slider-active .slider-1 {
-    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url("../images/slider2-smart-home.png");
+    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url("../images/main-slider-1.png");
 }
 section#home .slider-active .slider-2 {
     background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url("../images/slider-smart-home.png");
@@ -733,7 +733,7 @@ section#home .bg-fixed._smart {
     padding: 0;
     height: 1px;
     margin-left: 10px;
-    background: #fb8500;
+    background: #fff;
     border-radius: 50px;
     z-index: 1;
     cursor: pointer;
@@ -742,17 +742,19 @@ section#home .bg-fixed._smart {
 }
 .slider-active .slick-dots li.slick-active button {
     width: 50px;
-    background: #fb8500;
+    background: #fff;
 }
 .slider-active .slick-dots li.slick-active button::before {
-    background: url("../images/active-dote.png");
+    background: url("../images/lightbulb.png");
+    background-size: contain;
     opacity: 1;
 }
 .slider-active .slick-dots li button::before {
     content: "";
-    width: 19px;
-    height: 19px;
+    width: 22px;
+    height: 22px;
     background: url("../images/dote.png");
+    /* background-size: contain; */
     float: left;
     position: relative;
     margin-top: -9px;
@@ -909,8 +911,12 @@ section.features-sec {
 }
 .about-imgwrap .about-img3 {
     position: absolute;
-    top: 100px;
-    left: 70px;
+    top: 130px;
+    left: 35px;
+}
+
+.about-imgwrap .about-img3 img {
+    width: 420px;
 }
 .about-imgwrap .about-img4 {
     position: absolute;
@@ -2344,17 +2350,18 @@ section.features-sec {
 16. Clinets logos
 ================================================
 */
-.clinets-wrapper {
+.clients-wrapper {
     width: 100%;
-    padding: 70px 0;
+    padding: 24px 0;
     position: relative;
 }
-.clinets-wrapper .owl-carousel .owl-item img {
+.clients-wrapper .owl-carousel .owl-item img {
     display: block;
     margin: 0 auto;
-    width: auto;
+    width: 167px;
+    max-width: 100%;
 }
-.clinets-wrapper .owl-dots {
+.clients-wrapper .owl-dots {
     display: none;
 }
 /*
@@ -2781,6 +2788,7 @@ section p {
     font-size: 13px;
     color: #fff;
     margin-bottom: 18px;
+    display: block;
 }
 .footer-widget .contact li i {
     font-size: 16px;
@@ -2789,12 +2797,7 @@ section p {
     text-align: center;
     padding-right: 18px;
 }
-.footer-widget .contact li i,
-.footer-widget .contact li span {
-    display: table-cell;
-    vertical-align: middle;
-}
-.footer-widget .social {
+r-widget .social {
     margin-top: 30px;
 }
 .footer-widget .social li {
@@ -3024,15 +3027,13 @@ section p {
     }
 
     /** Menu CSS **/
-    .top-bar ul.left-bar {
-        /* display: none; */
-    }
     .top-bar ul.right-bar,
     .top-bar .top-right-nav.text-right,
     .top-bar ul li {
         float: none;
         text-align: center;
     }
+
     .mean-container .mean-bar {
         top: 28px;
     }
@@ -3245,7 +3246,7 @@ section p {
 @media only screen and (max-width: 767px) {
 }
 section.main {
-    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url(../images/slider2-smart-home.png);
+    background-image: linear-gradient(34deg, #1b73e6c0, #2969ada9), url(../images/main-slider-1.png);
     padding: 90px 0 55px;
 }
 
@@ -3319,11 +3320,28 @@ section.main span.ae::after {
 }
 
 section .sectiune {
-    padding: 15px 0;
+    /* padding: 15px 0; */
 }
 
 .sectiune .desc {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+section .sectiune img {
+    display: block;
+    margin: auto;
+    max-width: 550px;
+    max-height: 550px;
+}
+
+.top-bar img.ue-img {
+    width: 24px;
+}
+
+.top-bar ul.left-bar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
