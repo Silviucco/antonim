@@ -103,12 +103,14 @@ $(function () {
             $('header').removeClass("sticky");
         }
 
-        //Check to see if the window is top if not then display button
-        if ($(this).scrollTop() > 400) {
-            $('.scrollToTop').addClass('show');
-        } else {
-            $('.scrollToTop').removeClass('show');
-        }
+        // //Check to see if the window is top if not then display button
+        // if ($(this).scrollTop() > 400) {
+        //     $('.scrollToTop').addClass('show');
+        //     alert("case3");
+        // } else {
+        //     $('.scrollToTop').removeClass('show');
+        //     alert("case4");
+        // }
     });
 
     /*--------------------------
@@ -182,21 +184,6 @@ jQuery(window).on("load scroll", function () {
     $('#dvLoading').fadeOut('slow', function () {
         $(this).remove();
     });
-    $('.google-map').on('click', function () {
-        $('.google-map').find('iframe').css("pointer-events", "auto");
-    });
-    //Animation Numbers
-    jQuery('.animateNumber').each(function () {
-        var num = jQuery(this).attr('data-num');
-        var top = jQuery(document).scrollTop() + (jQuery(window).height());
-        var pos_top = jQuery(this).offset().top;
-        if (top > pos_top && !jQuery(this).hasClass('active')) {
-            jQuery(this).addClass('active').animateNumber({
-                number: num
-            }, 2000);
-        }
-    });
-
 });
 /*------------------------------------------------------------------
 FAQ
