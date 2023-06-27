@@ -271,7 +271,7 @@ button:focus {
     color: #ffffff;
     font-weight: 500;
     margin: 6px 0;
-    font-size: 15px;
+    font-size: 18px;
 }
 .top-bar .top-right-nav {
     float: right;
@@ -2355,6 +2355,7 @@ section.features-sec {
     width: 100%;
     padding: 24px 0;
     position: relative;
+    border-top: 3px solid #001064;
 }
 .clients-wrapper .owl-carousel .owl-item img {
     display: block;
@@ -2999,7 +3000,8 @@ section .sectiune img {
 }
 
 .top-bar img.ue-img {
-    width: 24px;
+    width: 48px;
+    margin: 0 10px;
 }
 
 .top-bar ul.left-bar {

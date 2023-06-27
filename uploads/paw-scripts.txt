@@ -1,0 +1,102 @@
+Google Analytics
+<!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T91N9CX4ED"></script> 
+<script> 
+    window.dataLayer = window.dataLayer || []; 
+    function gtag() {dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-T91N9CX4ED'); 
+</script> 
+
+bagat
+
+
+
+
+
+Global site tag Google Ads 
+To establish a connection between your website and Google Ads, copy and paste it in the code of every page of your website, immediately after the <head> element. Don't add more than one Google tag to each page.
+
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 10977521119 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10977521119"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-10977521119');
+</script> 
+
+
+
+
+
+
+
+Purchase (se pune doar pe thank you page, sa se activeze in momentul finalizarii comenzii, sau sa se activeze cand cineva apasa butonul “Trimite comanda” sau cum se mai numeste butonul de la ultimul pas)
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) that you'd like to track, right after the Google tag
+
+<!-- Event snippet for Purchase conversion page -->
+<script>
+    gtag('event', 'conversion', {
+        'send_to': 'AW-10977521119/u9I1CN3T3NsDEN_bvvIo',
+        'value': 1.0,
+        'currency': 'RON',
+        'transaction_id': ''
+    });
+</script>
+
+Unde scrie value trebuie sa preia in mod automat valoarea cosului. 
+
+Phone calls
+Copy the snippet below and paste it between the <head></head> tags of the page where your phone number appears, right after the Google tag
+
+
+
+
+<script>
+    gtag('config', 'AW-10977521119/lOeBCL6fjtwDEN_bvvIo', {
+      'phone_conversion_number': '0746 79 44 44'
+    });
+</script>
+
+]
+
+
+
+
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+    !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "1434863440330975");
+    fbq("track", "PageView");
+</script>
+<noscript>
+    <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=1434863440330975&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+purchase page 
+
+1434863440330975
