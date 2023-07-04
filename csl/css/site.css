@@ -1894,12 +1894,6 @@ Main Header
     width: 100%;
 }
 
-.main-header {
-    position: relative;
-    width: 100%;
-    z-index: 999;
-}
-
 .header-top {
     position: relative;
     margin-left: 313px;
@@ -1983,6 +1977,18 @@ Main Header
     justify-content: flex-end;
 }
 
+.main-header {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    padding: 8px 0;
+    background-color: #0d0e0f;
+}
+
+.sticky-header.fixed-header {
+    background-color: #0d0e0f;
+}
+
 .main-header .header-lower {
     position: relative;
     -webkit-transition: all 300ms ease;
@@ -1994,10 +2000,6 @@ Main Header
     min-width: 280px;
 }
 
-.main-header {
-    width: 100%;
-    z-index: 999;
-}
 .main-header .logo {
     position: relative;
     display: block;
@@ -2457,7 +2459,7 @@ Sticky Header
 }
 
 .sticky-header .mobile-nav-toggler {
-    color: var(--theme-color2);
+    color: #fff;
 }
 
 /***
@@ -2742,66 +2744,108 @@ Sticky Header
 }
 
 /* Header */
-.large-header {
+section.main .large-header {
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-image: url("../images/cacalica.svg");
+    background-position: center;
     background-size: cover;
-    background-position: center center;
-    z-index: 1;
-    background-color: #000;
+    background-repeat: no-repeat;
 }
 
-#large-header {
-}
-
-.main-title {
+section.main .main-title {
     position: absolute;
     margin: 0;
     padding: 0;
     color: #f9f1e9;
-    text-align: center;
     top: 50%;
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
 }
 
-.demo-1 .main-title {
-    text-transform: uppercase;
-    font-size: 4.2em;
-    letter-spacing: 0.1em;
-}
-
-.main-title .thin {
-    font-weight: 200;
-}
-
-@media only screen and (max-width: 768px) {
-    .demo-1 .main-title {
-        font-size: 3em;
-    }
-}
-
 section.main h1 span:first-child {
-    font-size: 24px;
-}
+    display: flex;
+    width: fit-content;
+    padding: 10px 15px;
 
-section.main {
-    background-image: url("../images/slider-1og.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.45);
+    font-size: 24px;
+    line-height: 1.1;
+    margin-left: -10px;
 }
 
 section.main h1 span#typewriting {
+    color: #50af9b;
     height: 100px;
     display: inline-block;
     position: relative;
     line-height: 110px;
-    border-bottom: 20px solid #fff;
-    padding: 0 10px;
+    border-bottom: 20px solid rgba(255, 255, 255, 0.95);
+    /* border-bottom: 20px solid #50af9b; */
+    padding: 0 15px 0 10px;
     margin-left: -10px;
+}
+
+section.main .container {
+    position: absolute;
+    width: 1200px;
+    top: 250px;
+    left: calc(50% - 600px);
+}
+
+@media only screen and (max-width: 1200px) {
+    section.main .container {
+        top: 200px;
+        width: 960px;
+        left: calc(50% - 480px);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    section.main .container {
+        top: 150px;
+        width: 720px;
+        left: calc(50% - 360px);
+    }
+    section.main h1 span:first-child {
+        font-size: 22px;
+    }
+    section.main h1 span#typewriting {
+        font-size: 72px;
+        line-height: 80px;
+        height: 76px;
+        border-bottom: 15px solid rgba(255, 255, 255, 0.95);
+    }
+}
+@media only screen and (max-width: 767px) {
+    section.main .container {
+        top: 100px;
+        width: 580px;
+        left: calc(50% - 290px);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    section.main .container {
+        top: 80px;
+        width: 540px;
+        max-width: 100%;
+        left: 15px;
+        padding: 0;
+    }
+
+    section.main h1 span:first-child {
+        font-size: 18px;
+    }
+    section.main h1 span#typewriting {
+        font-size: 56px;
+        line-height: 60px;
+        height: 56px;
+        /* border-bottom: 5px solid rgba(255, 255, 255, 0.95); */
+        border-bottom: 10px solid rgba(255, 255, 255, 0.95);
+    }
 }
 
 /***

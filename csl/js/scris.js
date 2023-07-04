@@ -26,11 +26,11 @@
         canvas.height = height;
         ctx = canvas.getContext("2d");
 
-        console.log(parseInt(height));
+        // console.log(parseInt(height));
 
         // create points
         points = [];
-        for (var x = 0; x < width; x = x + width / 15) {
+        for (var x = 0; x < width; x = x + width / 50) {
             for (var y = 0; y < height; y = y + height / 10) {
                 var px = x + (Math.random() * width) / 10;
                 var py = y + (Math.random() * height) / 10;
@@ -39,7 +39,7 @@
             }
         }
 
-        // for each point find the 5 closest points
+        // for each point find the 8 closest points
         for (var i = 0; i < points.length; i++) {
             var closest = [];
             var p1 = points[i];
@@ -47,7 +47,7 @@
                 var p2 = points[j];
                 if (!(p1 == p2)) {
                     var placed = false;
-                    for (var k = 0; k < 8; k++) {
+                    for (var k = 0; k < 4; k++) {
                         if (!placed) {
                             if (closest[k] == undefined) {
                                 closest[k] = p2;
@@ -56,7 +56,7 @@
                         }
                     }
 
-                    for (var k = 0; k < 8; k++) {
+                    for (var k = 0; k < 4; k++) {
                         if (!placed) {
                             if (getDistance(p1, p2) < getDistance(p1, closest[k])) {
                                 closest[k] = p2;
@@ -71,7 +71,7 @@
 
         // assign a circle to each point
         for (var i in points) {
-            var c = new Circle(points[i], 2 + Math.random() * 2, "rgba(80,175,155,0.6)");
+            var c = new Circle(points[i], 2 + Math.random() * 1, "rgba(194,255,242,0.6)");
             points[i].circle = c;
         }
     }
@@ -146,9 +146,9 @@
     }
 
     function shiftPoint(p) {
-        TweenLite.to(p, 1 + 1 * Math.random(), {
-            x: p.originX - 50 + Math.random() * 100,
-            y: p.originY - 50 + Math.random() * 100,
+        TweenLite.to(p, 2 + 1 * Math.random(), {
+            x: p.originX - 50 + Math.random() * 60,
+            y: p.originY - 50 + Math.random() * 60,
             ease: Circ.easeInOut,
             onComplete: function () {
                 shiftPoint(p);
@@ -163,26 +163,26 @@
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = "rgba(80,175,155,0.2)";
+            ctx.strokeStyle = "rgba(194,255,242,0.4)";
             ctx.stroke();
         }
     }
 
-    function Circle(pos, rad, color) {
+    function Circle(pos, color) {
         var _this = this;
 
         // constructor
         (function () {
             _this.pos = pos || null;
-            _this.radius = rad || null;
-            _this.color = color || null;
+            _this.radius = 5 || null;
+            _this.color = "rgba(194,255,242,0.4)" || null;
         })();
 
         this.draw = function () {
             if (!_this.active) return;
             ctx.beginPath();
-            ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-            ctx.fillStyle = "rgba(156,217,249," + _this.active + ")";
+            ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 4 * Math.PI, false);
+            ctx.fillStyle = "rgba(194,255,242,0.4)";
             ctx.fill();
         };
     }

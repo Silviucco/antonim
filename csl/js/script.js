@@ -57,8 +57,8 @@ var THEMEMASCOT = {};
             if (text === _CONTENT[_PART]) {
                 clearInterval(_INTERVAL_VAL);
                 setTimeout(function () {
-                    _INTERVAL_VAL = setInterval(Delete, 100);
-                }, 3000);
+                    _INTERVAL_VAL = setInterval(Delete, 150);
+                }, 4000);
             }
         }
 
@@ -85,7 +85,7 @@ var THEMEMASCOT = {};
         }
 
         // Start the typing effect on load
-        _INTERVAL_VAL = setInterval(Type, 100);
+        _INTERVAL_VAL = setInterval(Type, 150);
     }
 
     //Mobile Nav Hide Show

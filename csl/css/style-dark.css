@@ -12,7 +12,6 @@
 .contact-form.light textarea,
 .contact-form.light input:not([type="submit"]),
 body,
-.sticky-header.fixed-header,
 .page-wrapper {
     background-color: var(--dark-color1);
 }
