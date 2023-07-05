@@ -887,16 +887,13 @@ li {
 
 .preloader:after {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 100px;
-    width: 160px;
-    margin-left: -50px;
-    margin-top: -60px;
+    left: calc(50% - 60px);
+    top: calc(50% - 30px);
+    height: 60px;
+    width: 120px;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url(../images/logo.svg);
-    background-size: 84px;
     content: "";
 }
 
@@ -2748,10 +2745,20 @@ section.main .large-header {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-image: url("../images/cacalica.svg");
+    background-image: url("../images/full-dots.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 575px) {
+    section.main .large-header {
+        background-image: url("../images/dots-mob.svg");
+    }
+    section.main .large-header #demo-canvas {
+        position: relative;
+        transform: scalex(1.25);
+    }
 }
 
 section.main .main-title {
@@ -2769,7 +2776,6 @@ section.main h1 span:first-child {
     display: flex;
     width: fit-content;
     padding: 10px 15px;
-
     background-color: rgba(0, 0, 0, 0.45);
     font-size: 24px;
     line-height: 1.1;
@@ -2782,8 +2788,7 @@ section.main h1 span#typewriting {
     display: inline-block;
     position: relative;
     line-height: 110px;
-    border-bottom: 20px solid rgba(255, 255, 255, 0.95);
-    /* border-bottom: 20px solid #50af9b; */
+    /* border-bottom: 20px solid rgba(255, 255, 255, 0.95); */
     padding: 0 15px 0 10px;
     margin-left: -10px;
 }
@@ -2840,11 +2845,11 @@ section.main .container {
         font-size: 18px;
     }
     section.main h1 span#typewriting {
-        font-size: 56px;
-        line-height: 60px;
-        height: 56px;
-        /* border-bottom: 5px solid rgba(255, 255, 255, 0.95); */
-        border-bottom: 10px solid rgba(255, 255, 255, 0.95);
+        font-size: 42px;
+        line-height: 40px;
+        height: 40px;
+        border-bottom: 12px solid rgba(255, 255, 255, 0.95);
+        padding: 0;
     }
 }
 
