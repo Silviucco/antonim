@@ -469,11 +469,15 @@
         min-width: auto;
     }
 
+    .main-header {
+        padding: 10px 0;
+    }
+
     .main-header .logo img,
     .sticky-header .logo img {
         /* width: auto; */
         max-width: none;
-        max-height: 45px;
+        max-height: 40px;
     }
 
     .mobile-nav-toggler {

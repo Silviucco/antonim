@@ -888,12 +888,12 @@ li {
 .preloader:after {
     position: absolute;
     left: calc(50% - 60px);
-    top: calc(50% - 30px);
-    height: 60px;
+    top: calc(50% - 50px);
+    height: 100px;
     width: 120px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../images/logo.svg);
+    background-image: url(../images/logo-cc.svg);
     content: "";
 }
 
@@ -2740,6 +2740,13 @@ Sticky Header
     color: var(--theme-color2);
 }
 
+section.main .container {
+    position: absolute;
+    width: 1200px;
+    top: 150px;
+    left: calc(50% - 585px);
+}
+
 /* Header */
 section.main .large-header {
     position: relative;
@@ -2762,49 +2769,45 @@ section.main .large-header {
 }
 
 section.main .main-title {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    color: #f9f1e9;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
-}
-
-section.main h1 span:first-child {
     display: flex;
     width: fit-content;
     padding: 10px 15px;
     background-color: rgba(0, 0, 0, 0.45);
     font-size: 24px;
+    font-weight: 600;
     line-height: 1.1;
     margin-left: -10px;
+    color: #fff;
+    margin-bottom: 100px;
 }
 
-section.main h1 span#typewriting {
-    color: #50af9b;
-    height: 100px;
+/* section.main h1 span#typewriting {
+    display: block;
+    height: 80px;
+} */
+
+span.underlined {
     display: inline-block;
-    position: relative;
-    line-height: 110px;
-    /* border-bottom: 20px solid rgba(255, 255, 255, 0.95); */
-    padding: 0 15px 0 10px;
+    color: #41a58f;
+    font-size: 96px;
+    line-height: 85px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    padding: 0 10px;
     margin-left: -10px;
-}
-
-section.main .container {
-    position: absolute;
-    width: 1200px;
-    top: 250px;
-    left: calc(50% - 600px);
+    background-position: bottom;
+    background-image: url("../images/underline.png");
+    background-repeat: repeat-x;
 }
 
 @media only screen and (max-width: 1200px) {
     section.main .container {
-        top: 200px;
         width: 960px;
         left: calc(50% - 480px);
+    }
+    span.underlined {
+        font-size: 84px;
+        line-height: 78px;
     }
 }
 
@@ -2814,14 +2817,20 @@ section.main .container {
         width: 720px;
         left: calc(50% - 360px);
     }
-    section.main h1 span:first-child {
-        font-size: 22px;
+
+    section.main .main-title {
+        margin-bottom: 76px;
     }
-    section.main h1 span#typewriting {
-        font-size: 72px;
-        line-height: 80px;
-        height: 76px;
-        border-bottom: 15px solid rgba(255, 255, 255, 0.95);
+
+    span.underlined {
+        display: initial;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #typewriting {
+        margin-left: -10px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -2830,9 +2839,18 @@ section.main .container {
         width: 580px;
         left: calc(50% - 290px);
     }
+    #typewriting {
+        margin: 0;
+    }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 599px) {
+    section.main .main-title {
+        font-size: 20px;
+        margin-left: 0;
+        margin-bottom: 54px;
+    }
+
     section.main .container {
         top: 80px;
         width: 540px;
@@ -2841,15 +2859,10 @@ section.main .container {
         padding: 0;
     }
 
-    section.main h1 span:first-child {
-        font-size: 18px;
-    }
-    section.main h1 span#typewriting {
-        font-size: 42px;
-        line-height: 40px;
-        height: 40px;
-        border-bottom: 12px solid rgba(255, 255, 255, 0.95);
-        padding: 0;
+    span.underlined {
+        background-image: url(../images/underline-mob.png);
+        font-size: 64px;
+        line-height: 68px;
     }
 }
 
@@ -14502,13 +14515,19 @@ Sidebar
     margin-bottom: 22px;
 }
 .main-footer .about-widget .logo img {
-    width: 120px;
+    width: 160px;
 }
 .main-footer .about-widget .text {
     font-size: 16px;
     line-height: 30px;
     color: #8c8f94;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+    .main-footer .about-widget .logo img {
+        /* width: 120px; */
+    }
 }
 
 /*=== User LInks ===*/

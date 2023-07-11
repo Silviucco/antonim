@@ -5,7 +5,7 @@ var THEMEMASCOT = {};
     //Hide Loading Box (Preloader)
     function handlePreloader() {
         if ($(".preloader").length) {
-            $(".preloader").delay(200).fadeOut(1100);
+            $(".preloader").delay(400).fadeOut(2400);
         }
     }
 
@@ -50,7 +50,7 @@ var THEMEMASCOT = {};
         // Implements typing effect
         function Type() {
             var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-            _ELEMENT.innerHTML = text;
+            _ELEMENT.innerHTML = '<span class="underlined">' + text + "</span>";
             _PART_INDEX++;
 
             // If full sentence has been displayed then start to delete the sentence after some time
@@ -58,14 +58,14 @@ var THEMEMASCOT = {};
                 clearInterval(_INTERVAL_VAL);
                 setTimeout(function () {
                     _INTERVAL_VAL = setInterval(Delete, 150);
-                }, 4000);
+                }, 4112200);
             }
         }
 
         // Implements deleting effect
         function Delete() {
             var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
-            _ELEMENT.innerHTML = text;
+            _ELEMENT.innerHTML = '<span class="underlined">' + text + "</span>";
             _PART_INDEX--;
 
             // If sentence has been deleted then start to display the next sentence
