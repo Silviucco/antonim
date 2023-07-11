@@ -2781,10 +2781,15 @@ section.main .main-title {
     margin-bottom: 100px;
 }
 
-/* section.main h1 span#typewriting {
+section.main .subhead {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 150px;
     display: block;
-    height: 80px;
-} */
+    max-width: 60%;
+    position: absolute;
+    top: 200px;
+}
 
 span.underlined {
     display: inline-block;
@@ -2842,6 +2847,10 @@ span.underlined {
     #typewriting {
         margin: 0;
     }
+    section.main .subhead {
+        margin-top: 50px;
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 599px) {
@@ -2863,6 +2872,27 @@ span.underlined {
         background-image: url(../images/underline-mob.png);
         font-size: 64px;
         line-height: 68px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    section.main .container {
+        top: 60px;
+        width: calc(100% - 30px);
+    }
+
+    span.underlined {
+        font-size: 56px;
+        line-height: 62px;
+    }
+
+    section.main .main-title {
+        margin-bottom: 36px;
+    }
+
+    section.main .subhead {
+        top: 160px;
+        font-size: 18px;
     }
 }
 

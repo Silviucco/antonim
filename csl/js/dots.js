@@ -89,7 +89,7 @@
     function initHeaderBig() {
         console.log("desktop");
         width = window.innerWidth;
-        height = parseInt(window.innerHeight / 2 - 20 + "px");
+        height = parseInt(window.innerHeight / 2 + 90 + "px");
         target = { x: width / 2, y: height / 2 };
 
         largeHeader = document.getElementById("large-header");

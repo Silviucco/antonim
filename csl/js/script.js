@@ -5,7 +5,7 @@ var THEMEMASCOT = {};
     //Hide Loading Box (Preloader)
     function handlePreloader() {
         if ($(".preloader").length) {
-            $(".preloader").delay(400).fadeOut(2400);
+            $(".preloader").delay(400).fadeOut(1400);
         }
     }
 
@@ -58,7 +58,7 @@ var THEMEMASCOT = {};
                 clearInterval(_INTERVAL_VAL);
                 setTimeout(function () {
                     _INTERVAL_VAL = setInterval(Delete, 150);
-                }, 4112200);
+                }, 4200);
             }
         }
 
