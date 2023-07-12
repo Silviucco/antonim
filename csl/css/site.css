@@ -2743,7 +2743,7 @@ Sticky Header
 section.main .container {
     position: absolute;
     width: 1200px;
-    top: 150px;
+    top: 120px;
     left: calc(50% - 585px);
 }
 
@@ -2784,11 +2784,14 @@ section.main .main-title {
 section.main .subhead {
     font-size: 24px;
     color: #fff;
-    margin-top: 150px;
+    margin-top: 120px;
+    margin-left: -15px;
+    padding: 16px 24px;
     display: block;
     max-width: 60%;
     position: absolute;
     top: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 span.underlined {
@@ -2797,7 +2800,7 @@ span.underlined {
     font-size: 96px;
     line-height: 85px;
     font-weight: bold;
-    letter-spacing: -2px;
+    /* letter-spacing: -2px; */
     padding: 0 10px;
     margin-left: -10px;
     background-position: bottom;
@@ -2807,8 +2810,12 @@ span.underlined {
 
 @media only screen and (max-width: 1200px) {
     section.main .container {
+        top: 80px;
         width: 960px;
         left: calc(50% - 480px);
+    }
+    section.main .main-title {
+        margin-bottom: 80px;
     }
     span.underlined {
         font-size: 84px;
@@ -2818,7 +2825,6 @@ span.underlined {
 
 @media only screen and (max-width: 991px) {
     section.main .container {
-        top: 150px;
         width: 720px;
         left: calc(50% - 360px);
     }
@@ -2830,12 +2836,12 @@ span.underlined {
     span.underlined {
         display: initial;
         background-position: center;
-        margin: 0;
         padding: 0;
+        margin: 0;
     }
 
-    #typewriting {
-        margin-left: -10px;
+    section.main .subhead {
+        max-width: 75%;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -2848,7 +2854,7 @@ span.underlined {
         margin: 0;
     }
     section.main .subhead {
-        margin-top: 50px;
+        margin-top: 65px;
         max-width: 100%;
     }
 }
@@ -2861,7 +2867,7 @@ span.underlined {
     }
 
     section.main .container {
-        top: 80px;
+        top: 60px;
         width: 540px;
         max-width: 100%;
         left: 15px;
@@ -2873,11 +2879,14 @@ span.underlined {
         font-size: 64px;
         line-height: 68px;
     }
+    section.main .subhead {
+        font-size: 18px;
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 479px) {
     section.main .container {
-        top: 60px;
         width: calc(100% - 30px);
     }
 
@@ -2892,7 +2901,6 @@ span.underlined {
 
     section.main .subhead {
         top: 160px;
-        font-size: 18px;
     }
 }
 
@@ -14500,7 +14508,8 @@ Sidebar
 /* Widget Section */
 .main-footer .widgets-section {
     position: relative;
-    padding: 110px 0 65px;
+    padding: 80px 0 65px;
+    background-color: #000;
 }
 .main-footer .footer-column {
     position: relative;
@@ -14545,7 +14554,7 @@ Sidebar
     margin-bottom: 22px;
 }
 .main-footer .about-widget .logo img {
-    width: 160px;
+    width: 240px;
 }
 .main-footer .about-widget .text {
     font-size: 16px;

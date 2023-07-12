@@ -12,10 +12,10 @@
 
     if (window.innerWidth < 575) {
         initHeaderMobile();
-        alert(height);
+        // alert(height);
     } else if (window.innerWidth > 575) {
         initHeaderBig();
-        alert(height);
+        // alert(height);
     }
 
     initAnimation();
@@ -23,7 +23,7 @@
 
     function initHeaderMobile() {
         width = window.innerWidth;
-        height = parseInt(window.innerHeight / 2 + "px");
+        height = parseInt(window.innerHeight / 2 + 60 + "px");
         target = { x: width / 2, y: height };
 
         largeHeader = document.getElementById("large-header");
@@ -84,7 +84,7 @@
 
     function initHeaderBig() {
         width = window.innerWidth;
-        height = parseInt(window.innerHeight / 2 + 90 + "px");
+        height = parseInt(window.innerHeight / 2 + "px");
         console.log(height);
         target = { x: width / 2, y: height / 2 };
 
@@ -171,14 +171,14 @@
         else animateHeader = true;
     }
 
-    function resize() {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        largeHeader.style.height = height + "px";
-        canvas.width = width;
-        canvas.height = height;
-        console.log(parseInt(largeHeader));
-    }
+    // function resize() {
+    //     width = window.innerWidth;
+    //     height = window.innerHeight;
+    //     largeHeader.style.height = height + "px";
+    //     canvas.width = width;
+    //     canvas.height = height;
+    //     console.log(parseInt(largeHeader));
+    // }
 
     // animation
     function initAnimation() {
