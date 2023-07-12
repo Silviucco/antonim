@@ -12,23 +12,19 @@
 
     if (window.innerWidth < 575) {
         initHeaderMobile();
-        console.log("mob");
+        alert(height);
     } else if (window.innerWidth > 575) {
         initHeaderBig();
-        console.log("desk");
+        alert(height);
     }
 
     initAnimation();
     addListeners();
 
     function initHeaderMobile() {
-        console.log("mobile");
         width = window.innerWidth;
         height = parseInt(window.innerHeight / 2 + "px");
         target = { x: width / 2, y: height };
-
-        console.log(width);
-        console.log(height);
 
         largeHeader = document.getElementById("large-header");
         largeHeader.style.height = height + "px";
@@ -87,9 +83,9 @@
     }
 
     function initHeaderBig() {
-        console.log("desktop");
         width = window.innerWidth;
         height = parseInt(window.innerHeight / 2 + 90 + "px");
+        console.log(height);
         target = { x: width / 2, y: height / 2 };
 
         largeHeader = document.getElementById("large-header");
@@ -99,8 +95,6 @@
         canvas.width = width;
         canvas.height = height;
         ctx = canvas.getContext("2d");
-
-        // console.log(parseInt(height));
 
         // create points
         points = [];
@@ -156,7 +150,7 @@
             window.addEventListener("mousemove", mouseMove);
         }
         window.addEventListener("scroll", scrollCheck);
-        window.addEventListener("resize", resize);
+        // window.addEventListener("resize", resize);
     }
 
     function mouseMove(e) {
@@ -183,6 +177,7 @@
         largeHeader.style.height = height + "px";
         canvas.width = width;
         canvas.height = height;
+        console.log(parseInt(largeHeader));
     }
 
     // animation
