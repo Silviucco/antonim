@@ -477,7 +477,7 @@
     .sticky-header .logo img {
         /* width: auto; */
         max-width: none;
-        max-height: 52px;
+        max-height: 48px;
     }
 
     .mobile-nav-toggler {
