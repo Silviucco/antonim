@@ -20,7 +20,6 @@
     --link-color: var(--theme-color1);
     --link-hover-color: var(--theme-color1);
     --text-font: "Play", sans-serif;
-    /* --title-font: "Agdasima", sans-serif; */
     --body-font-size: 16px;
     --body-line-height: 30px;
     --body-font-weight: 400;
@@ -56,6 +55,9 @@
     --large-container-width: 1550px;
     --container-pt: 120px;
     --container-pb: 120px;
+    --dark-color1: #1c1e22;
+    --dark-color2: #222429;
+    --dark-color3: #2b242b;
 }
 
 /*
@@ -14709,4 +14711,76 @@ Sidebar
 }
 .footer-bottom .copyright-text a:hover {
     color: #ffffff;
+}
+
+.page-wrapper,
+body {
+    background-color: var(--dark-color1);
+}
+.about-section .content-column .info-box,
+.about-section-two,
+.contact-form-two .form-group input:not([type="submit"]),
+.contact-form-two.style-two textarea,
+.contact-section-two .info-column .inner-column:before,
+.feature-block .inner-box:before,
+.feature-block-two .inner-box:before,
+.header-top .inner-container,
+.news-block .content-box,
+.service-block .inner-box,
+.team-block .info-box,
+.team-block-two .inner-box:before {
+    background-color: var(--dark-color2);
+}
+.contact-form-two .form-group input:not([type="submit"]),
+.contact-form-two .form-group textarea,
+.news-block .content-box,
+.service-block .inner-box {
+    border-color: var(--dark-color1);
+}
+.about-block,
+.contact-section-two .info-column .info-box {
+    border-color: var(--dark-color2) !important;
+}
+.about-block .title,
+.about-block-two .title,
+.about-block:hover .icon,
+.about-section .content-column .info-box .title,
+.contact-section-two .info-column .info-box .title,
+.feature-block .title,
+.feature-block-two .title,
+.main-header .info-btn,
+.main-header .ui-btn,
+.mobile-nav-toggler,
+.news-block .content-box .title,
+.sec-title h2,
+.service-block .content-box .title,
+.team-block .info-box .name,
+.team-block-two .info-box .name,
+.title a {
+    color: #fff;
+}
+.about-section .content-column .info-box:hover .title {
+    color: var(--dark-color1);
+}
+.header-style-two {
+    background-color: unset;
+}
+.about-section:before {
+    background-image: url(../images/icons/pattern-4-dark.png);
+}
+.features-section-two:before {
+    background-image: url(../images/icons/pattern-16.png);
+}
+.team-section-two::before {
+    background-image: url(../images/icons/pattern-20-dark.png);
+}
+.faqs-section.style-two:before {
+    background-image: url(../images/icons/pattern-21-dark.png);
+}
+.news-section-two::before {
+    background-image: url(../images/icons/shape-4-dark.png);
+    opacity: 0.15;
+}
+.contact-section:before {
+    opacity: 0.1;
 }
