@@ -2895,6 +2895,7 @@ span.underlined {
 
 @media only screen and (max-width: 479px) {
     section.main .container {
+        top: 40px;
         width: calc(100% - 30px);
     }
 
