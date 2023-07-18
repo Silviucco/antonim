@@ -58,7 +58,7 @@ var THEMEMASCOT = {};
                 clearInterval(_INTERVAL_VAL);
                 setTimeout(function () {
                     _INTERVAL_VAL = setInterval(Delete, 150);
-                }, 4200);
+                }, 422200);
             }
         }
 

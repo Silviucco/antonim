@@ -2002,7 +2002,7 @@ Main Header
     display: block;
 }
 .main-header .logo img {
-    width: 100px;
+    width: 94px;
     max-width: 100%;
     height: auto;
 }
@@ -2411,9 +2411,6 @@ Sticky Header
 .sticky-header .logo {
     padding: 10px 0;
 }
-.sticky-header .logo img {
-    max-height: 40px;
-}
 .sticky-header .nav-outer {
     position: relative;
     background: none;
@@ -2778,13 +2775,13 @@ section.main .main-title {
     line-height: 1.1;
     margin-left: -10px;
     color: #fff;
-    margin-bottom: 100px;
+    margin-bottom: 48px;
 }
 
 section.main .subhead {
     font-size: 24px;
     color: #fff;
-    margin-top: 120px;
+    margin-top: 48px;
     margin-left: -15px;
     padding: 16px 24px;
     display: block;
@@ -2800,7 +2797,6 @@ span.underlined {
     font-size: 96px;
     line-height: 85px;
     font-weight: bold;
-    /* letter-spacing: -2px; */
     padding: 0 10px;
     margin-left: -10px;
     background-position: bottom;
@@ -2808,29 +2804,30 @@ span.underlined {
     background-repeat: repeat-x;
 }
 
+@media only screen and (max-width: 1920px) {
+    section.main .container {
+        top: 50px;
+    }
+}
 @media only screen and (max-width: 1200px) {
     section.main .container {
-        top: 80px;
         width: 960px;
         left: calc(50% - 480px);
-    }
-    section.main .main-title {
-        margin-bottom: 80px;
     }
     span.underlined {
         font-size: 84px;
         line-height: 78px;
     }
+    section.main .subhead {
+        top: 160px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     section.main .container {
+        top: 36px;
         width: 720px;
         left: calc(50% - 360px);
-    }
-
-    section.main .main-title {
-        margin-bottom: 76px;
     }
 
     span.underlined {
@@ -2841,14 +2838,17 @@ span.underlined {
     }
 
     section.main .subhead {
-        max-width: 75%;
+        margin-top: 60px;
+        max-width: 70%;
+        top: 210px;
+        font-size: 22px;
+        line-height: 26px;
     }
 }
 @media only screen and (max-width: 767px) {
     section.main .container {
-        top: 100px;
-        width: 580px;
-        left: calc(50% - 290px);
+        width: 598px;
+        left: 15px;
     }
     #typewriting {
         margin: 0;
@@ -2856,6 +2856,14 @@ span.underlined {
     section.main .subhead {
         margin-top: 65px;
         max-width: 100%;
+    }
+    header.main-header .container {
+        max-width: 100%;
+    }
+    span.underlined {
+        background-image: url(../images/underline-mob.png);
+        font-size: 76px;
+        line-height: 80px;
     }
 }
 
@@ -2875,9 +2883,9 @@ span.underlined {
     }
 
     span.underlined {
-        background-image: url(../images/underline-mob.png);
         font-size: 64px;
-        line-height: 68px;
+        line-height: 72px;
+        background-position: bottom;
     }
     section.main .subhead {
         font-size: 18px;
@@ -2892,7 +2900,7 @@ span.underlined {
 
     span.underlined {
         font-size: 56px;
-        line-height: 62px;
+        line-height: 66px;
     }
 
     section.main .main-title {
