@@ -1,48 +1,7 @@
-/* Oitech | IT Solutions & Technology HTML Template
-
-Template Name: Oitech
-Version: 1.0.0
-License: copyright commercial
-
-/************ TABLE OF CONTENTS ***************
-1. Fonts
-2. Reset
-3. Global Settings
-4. Main Header / TWO / Three / Four / Five
-5. Sticky Header
-6. Mobile Menu
-7. Section Title
-8. Page Title
-9. Main Slider
-10. Banner Section / Two / Three / Four
-11. Features Section / Two / Three / Four / Five / Six
-12. About Section / Two / Three / Four / Five / Six
-13. Services Section / Two / Three / Four / Five
-14. Map Section
-15. Call To Action / Two / Three / Four / Five
-16. Locations Section / Two
-17. Offer Section / Two / Three / Four
-18. FAQ's Sectiom / Two
-19. Work Section
-20. Fun Fact Section / Two
-21. Project Section / Two / Three
-22. Testimonial Section / Two / Three / Four
-23. Why Choose Us / Two / Three
-24. Industries Section
-25. Pricing Section
-26. team Section / Two
-27. Contact Sectiom / Two / Three / Four
-28. News Section / Two
-29. Clients Section
-30. Main Footer
-**********************************************/
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 @import url("animate.css");
 @import url("swiper.min.css");
-@import url("linear.css");
-@import url("fontawesome-all.css");
-@import url("flaticon.css");
 :root {
     --theme-color1: #222429;
     --theme-color2: #50af9b;
