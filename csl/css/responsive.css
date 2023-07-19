@@ -238,7 +238,6 @@
     .sec-title h2 {
         font-size: 36px;
     }
-    .feature-block .text br,
     .sec-title .sub-title:before {
         display: none;
     }

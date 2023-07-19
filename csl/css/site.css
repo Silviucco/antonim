@@ -2863,6 +2863,7 @@ span.underlined {
     span.underlined {
         font-size: 56px;
         line-height: 66px;
+        letter-spacing: -2px;
     }
 
     section.main .main-title {
