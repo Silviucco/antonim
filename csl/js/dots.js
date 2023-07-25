@@ -84,7 +84,7 @@
 
     function initHeaderBig() {
         width = window.innerWidth;
-        height = parseInt(window.innerHeight / 2 + 24 + "px");
+        height = parseInt(window.innerHeight / 2 + 56 + "px");
         console.log(height);
         target = { x: width / 2, y: height / 2 };
 
