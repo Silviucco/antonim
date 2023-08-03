@@ -33,7 +33,7 @@ var THEMEMASCOT = {};
     headerStyle();
 
     function Scris() {
-        var _CONTENT = ["Web Development", "Web Design", "Graphic Design", "Branding"];
+        var _CONTENT = ["Web Development", "Web Design", "Graphic Design", "Identitate Vizuală", "SEO Tehnic"];
 
         // Current sentence being processed
         var _PART = 0;
